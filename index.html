@@ -1,0 +1,472 @@
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Portfolio</title>
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Lien pour les icônes (Font Awesome) - Optionnel -->
+  <!--
+  <script src="https://kit.fontawesome.com/TONCODE.js" crossorigin="anonymous"></script>
+  -->
+</head>
+<body>
+
+  <div class="container">
+    <!-- SIDEBAR À GAUCHE -->
+    <div class="sidebar">
+      <div class="profile-pic-card">
+        <img src="img/moi.jpg" alt="Moi" />
+      </div>
+      <h1>Ophélie Soler</h1>
+      <p class="profession">Médiamaticienne</p>
+      <p class="location"><i class="fas fa-map-marker-alt"></i> Bellevue, Genève</p>
+
+      <div class="socials">
+        <a href="pages/Portfolio.html">🎨</a>
+        <a href="www.linkedin.com/in/ophélie-vanessa-soler">🌐</a>
+      </div>
+
+      <div class="btn-wrapper">
+        <!-- Lien de téléchargement du CV -->
+        <a href="CV-Ophelie-Soler.pdf" download class="btn-dark wide-rounded">
+          Télécharger mon CV
+        </a>
+      </div>
+    </div>
+    <!-- FIN DE LA SIDEBAR -->
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="main">
+
+      <!-- NAVBAR EN HAUT -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="portfolio/index.html" class="active">Home</a></li>
+          <li><a href="#Portfolio.html">Portfolio</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="theme-toggle" class="theme-toggle">🌙</div>
+      </nav>
+
+      <!-- SECTION HOME -->
+      <section id="home" class="section">
+        <div class="hero">
+          <p class="intro">Ophélie Soler,</p>
+          <h1>Médiamaticienne et passionnée par le numérique.</h1>
+          <div class="buttons">
+            <button class="btn-dark">Mes travaux</button>
+            <!-- Lien de téléchargement du CV -->
+            <a href="CV-Ophelie-Soler.pdf" download class="btn-light">
+              Télécharger mon CV
+            </a>
+          </div>
+        </div>
+      </section>
+
+        
+        <!-- SECTION PORTFOLIO -->
+<section id="portfolio" class="section">
+  <h2 class="section-title">Mes 3 meilleurs projets</h2>
+  <div class="portfolio-grid">
+
+    <!-- Projet 1 -->
+    <div class="portfolio-card">
+      <div class="card-image">
+        <img src="img/projet1.jpg" alt="Projet 1" />
+      </div>
+      <div class="card-content">
+        <h3>Vidéo cérémonie de remise des prix Edukki</h3>
+        <p>Tournage, Montage, Color grading</p>
+      </div>
+    </div>
+
+    <!-- Projet 2 (catalogue-boissons.pdf) -->
+    <div class="portfolio-card">
+      <div class="card-image">
+        <img src="img/catalogue-boissons.pdf" alt="Projet 2" />
+      </div>
+   
+
+      <div class="card-content">
+        <h3>Catalogue de boissons</h3>
+        <p>Design • Indesign, Illustrator</p>
+      </div>
+    </div>
+       
+          <!-- Fenêtre modale -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <button id="close-modal" class="close-btn">✕</button>
+    <div class="modal-left">
+      <h2 id="project-title">Vidéo cérémonie de remise des prix Edukki</h2>
+      <p id="project-description"> Dans le cadre du concours Edukki 2024, j’ai supervisé et participé à la réalisation de la vidéo officielle de la cérémonie de remise des prix, organisée à l’ONU. Ce projet, l’un des plus ambitieux que j’ai mené, m’a permis de travailler aux côtés des apprentis tout en gérant chaque étape clé : préparation, tournage et montage final. Ce projet m’a appris à coordonner une équipe sur un événement de grande envergure, à capturer des moments clés dans un environnement prestigieux, et à produire un rendu vidéo reflétant la qualité et le professionnalisme attendus pour une telle occasion. Cette expérience a également renforcé mes compétences en organisation, gestion de projet, et adaptation aux contraintes techniques et logistiques d’un tournage en direct</p>
+    </div>
+      
+      <!-- Fenêtre modale -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <button id="close-modal" class="close-btn">✕</button>
+
+    <!-- Partie gauche : Galerie d'images -->
+    <div class="modal-left">
+      <div class="gallery">
+        <img id="main-image" src="img/projet1.jpg" alt="Image principale du projet" />
+        <div class="thumbnails">
+          <img src="img/catalogue-boissons.pdf" alt="Miniature 1" class="thumbnail" />
+          <img src="img/cdm1.jpg" alt="Miniature 2" class="thumbnail" />
+          <img src="img/projet3.jpg" alt="Miniature 3" class="thumbnail" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Partie droite : Description -->
+    <div class="modal-right">
+      <h3 id="project-title">Titre du projet</h3>
+      <p id="project-description">Le client souhaitait mettre en avant ses produits (boissons) pour ses clients </p>
+      <h4>Outils utilisés</h4>
+      <ul id="project-tools">
+        <li>InDesign</li>
+        <li>Illustrator</li>
+        <li>Photoshop</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="modal-right">
+      <h3>Fichiers du projet</h3>
+      <ul id="project-files">
+        <li><a href="#" target="_blank">Fichier 1</a></li>
+        <li><a href="#" target="_blank">Fichier 2</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <!-- Projet 3 (alexis.pdf) -->
+    <div class="portfolio-card">
+      <div class="card-image">
+        <img src="img/alexis.pdf" alt="Projet 3" />
+      </div>
+      <div class="card-content">
+        <h3>Dépliant de présentation MARSTRAINING</h3>
+        <p>Design • Indesign, Illustrator</p>
+      </div>
+    </div>
+
+   <a href="pages/Portfolio.html"  class="btn-dark wide-rounded">
+          voir d'autres projets
+        </a>
+
+  </div>
+</section>
+     
+      <!-- SECTION EDUCATION -->
+      <section class="education-section">
+        <h2 class="section-title">Formation</h2>
+        <div class="education-list">
+
+          <!-- Formation 1 -->
+          <div class="education-item">
+            <div class="education-year">2016 – 2020</div>
+            <div class="education-info">
+              <h3 class="course-title">CFC-MATU Apprentissage de Médiamaticienne</h3>
+              <p class="course-institution">CPNV</p>
+            </div>
+            <div class="education-description">
+              <p>La formation CFC-MATU en Médiamatique m’a permis d’acquérir des compétences en design, web et marketing digital. Combinant bases techniques et culture générale, j’ai développé une solide polyvalence pour relever les défis du numérique.</p>
+            </div>
+          </div>
+
+          <!-- Formation 2 -->
+          <div class="education-item">
+            <div class="education-year">2021-2024</div>
+            <div class="education-info">
+              <h3 class="course-title">Brevet de Médiamaticien</h3>
+              <p class="course-institution">ICT Formation Professionnelle</p>
+            </div>
+            <div class="education-description">
+              <p>Le Brevet de Médiamaticien m’a permis d’affiner mon expertise en stratégie digitale, création multimédia et marketing en ligne. J’ai développé des compétences pointues en storytelling, conception de campagnes impactantes, gestion de projets complexes et analyse de données pour optimiser la performance digitale. Cette formation m’a également préparée à encadrer des équipes, à élaborer des solutions créatives innovantes et à piloter des projets stratégiques dans des environnements numériques exigeants.</p>
+            </div>
+          </div>
+
+          <!-- Formation 3 -->
+          <div class="education-item">
+            <div class="education-year">2021</div>
+            <div class="education-info">
+              <h3 class="course-title">Attestation de formateur en entreprise</h3>
+              <p class="course-institution">EDUPRO État de Genève</p>
+            </div>
+            <div class="education-description">
+              <p>J'ai suivi le cours de 40 heures organisé par Edupros, conforme aux exigences de l'OFFT, pour devenir formateur en entreprise. Cette formation m'a permis d'acquérir les compétences nécessaires pour encadrer des apprentis, planifier leur suivi, élaborer des rapports de formation et les accompagner dans leur développement. Je suis désormais habilité à former et soutenir efficacement des apprentis dans un cadre structuré et conforme aux exigences légales.</p>
+            </div>
+          </div>
+
+          <!-- Formation 4 -->
+          <div class="education-item">
+            <div class="education-year">2021</div>
+            <div class="education-info">
+              <h3 class="course-title">Cours Experts</h3>
+              <p class="course-institution">HEFP</p>
+            </div>
+            <div class="education-description">
+              <p>J'ai suivi le cours d’une journée dispensé par la HEFP, destiné à former les experts aux examens de la formation professionnelle en Suisse. Cette formation m’a permis d’acquérir les compétences nécessaires pour planifier, encadrer et évaluer les épreuves d’examen, notamment les Travaux Pratiques Individuels (TPI) en médiamatique, conformément aux exigences des ordonnances et plans de formation. Cela fait maintenant 3 ans que j’expertise les TPI en médiamatique, et j’ai également eu l’occasion d’être responsable TPI, supervisant le bon déroulement des épreuves tout en garantissant l’équité, la transparence et la qualité du processus d’évaluation.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION EXPERIENCE -->
+      <section class="education-experience-section">
+        <h2 class="section-title">Expériences</h2>
+        <div class="timeline">
+
+          <!-- Expérience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2020 – maintenant</div>
+            <div class="timeline-info">
+              <h3>Beaureg'Arts SA</h3>
+              <p class="timeline-sub">Responsable Junior Team</p>
+            </div>
+            <div class="timeline-desc">
+              <p>
+                Au sein de Beaureg’Arts, j’occupe un rôle clé alliant mes compétences de Médiamaticienne et mon expérience de pionnière en médiamatique dans le canton. Cette expertise m’a permis de collaborer étroitement avec des institutions publiques telles que l’OFPC et le CFPT, renforçant ainsi l’impact et la qualité de nos formations.
+
+J’ai la responsabilité de gérer la « Junior Team », un groupe d’apprentis que j’accompagne dans la réalisation de mandats clients réels, depuis la prospection et la négociation jusqu’à la concrétisation des projets. Je veille à évaluer régulièrement leurs acquis et à les guider dans leur progression, afin qu’ils puissent valider leur CFC avec succès. En parallèle, je participe à la gestion quotidienne du centre et mets en œuvre mes compétences créatives et organisationnelles pour soutenir l’ensemble des activités de Beaureg’Arts.
+              </p>
+            </div>
+          </div>
+
+          <!-- Expérience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2016-2020</div>
+            <div class="timeline-info">
+              <h3>Swisscom</h3>
+              <p class="timeline-sub">Médiamaticienne</p>
+            </div>
+            <div class="timeline-desc">
+              <p>
+               Au sein de Swisscom, j’ai eu l’opportunité de participer à des projets variés et enrichissants. J’ai notamment pris part aux Jeux Olympiques de la Jeunesse à Lausanne, soutenu la migration vers des solutions Microsoft dans différentes entreprises partenaires et animé des journées Girls in Tech à l’EPFL. Mon rôle englobait également la réalisation de vidéos, la formation en interne via Skype ainsi que la gestion du visual merchandising du Shop de Cornavin. Cette expérience m’a permis de développer mes compétences en gestion de projet, en communication et en créativité, tout en évoluant au sein d’un environnement technologique exigeant.
+              </p>
+            </div>
+          </div>
+
+          <!-- Expérience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2021 – maintenant</div>
+            <div class="timeline-info">
+              <h3>Commissaire d'apprentissage</h3>
+              <p class="timeline-sub">OFPC - État de Genève</p>
+            </div>
+            <div class="timeline-desc">
+              <p>
+                En tant que Commissaire d’apprentissage à l’OFPC (Office pour l’Orientation, la Formation Professionnelle et Continue) – État de Genève, j’assure le suivi et l’évaluation du bon déroulement de la formation des apprenants en Médiamatique. Depuis maintenant quatre ans, j’ai eu la chance d’accompagner la plupart des futurs Médiamaticiens du canton, veillant à la qualité de leur apprentissage et au respect des standards fixés par les autorités. Mon rôle consiste également à soutenir les entreprises formatrices dans l’encadrement des apprentis, en leur fournissant des conseils pédagogiques et en favorisant la bonne transmission des compétences. Grâce à cette expérience, j’ai développé une expertise approfondie du système de formation duale et une connaissance fine des enjeux liés à la Médiamatique dans le canton.
+              </p>
+            </div>
+          </div>
+            
+            <!-- Expérience 4 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2024 - maintenant </div>
+            <div class="timeline-info">
+              <h3>Technicienne son et lumière</h3>
+              <p class="timeline-sub">La Lanterne Magique </p>
+            </div>
+            <div class="timeline-desc">
+              <p>
+             Lors des séances de cinéma organisées par la Lanterne Magique, je suis responsable du son et de l’éclairage pour le spectacle des comédiens avant la projection. Mon rôle inclut la connexion de la table de mixage, l’ajustement des micros et des gains, ainsi que la gestion des éclairages en fonction des déplacements et de l’histoire. Cette expérience m’a permis de maîtriser les équipements techniques, de développer ma réactivité face aux imprévus et d’améliorer mes compétences en coordination et en communication avec l’équipe.
+              </p>
+            </div>
+          </div>
+            
+             <!-- Expérience 4 -->
+          <div class="timeline-item">
+            <div class="timeline-date">2018 - maintenant </div>
+            <div class="timeline-info">
+              <h3>Caissière </h3>
+              <p class="timeline-sub">The Cube Diffusion SA </p>
+            </div>
+            <div class="timeline-desc">
+              <p>
+             Lors de la gestion d’un tabac, j’étais responsable des opérations quotidiennes, incluant la gestion des stocks, la commande des marchandises, et l’accueil des clients. Mon rôle consistait également à gérer les encaissements, à organiser l’agencement des produits pour optimiser les ventes et à assurer un excellent service client. Cette expérience m’a permis de développer mes compétences en gestion, en organisation, et en relation client, tout en apprenant à anticiper les besoins, à résoudre rapidement les problèmes et à maintenir une atmosphère conviviale et professionnelle au sein du commerce.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION STATS -->
+      <section class="stats-section">
+        <h2 class="section-title">Mon engagement dans le monde de la médiamatique</h2>
+        <div class="stats-cards">
+
+          <!-- Stat 1 -->
+          <div class="stat-card">
+            <h3>+35</h3>
+            <p>Apprentis encadrés</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card">
+            <h3>+5</h3>
+            <p>Années d'expérience</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card">
+            <h3>+100</h3>
+            <p>Projets digitaux encadrés</p>
+          </div>
+        </div>
+
+        <p class="about-text">
+         Collaboration avec des entreprises de tout types pour encadrer les jeunes dans leur formation CFC.
+        </p>
+
+     
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <!-- SECTION ABOUT / Inspirée du style "Alex Walker" -->
+<section id="about" class="section about-me-dark">
+  
+  <!-- Bloc principal à gauche -->
+  <div class="about-me-content">
+    
+    <p class="about-text">
+Être responsable de la Junior Team signifie accompagner plus de 30 jeunes tout au long de leur formation de quatre ans en Médiamatique, en les préparant concrètement aux exigences de ce métier. Mon rôle a consisté à leur transmettre des compétences clés comme la gestion de projets multimédias, la création de contenus digitaux et la stratégie de communication, tout en développant leur autonomie et leur sens des responsabilités. J’ai conçu des outils pédagogiques adaptés et innovants pour renforcer leur apprentissage, tout en étant force de proposition pour répondre à leurs besoins spécifiques. En leur offrant un cadre structuré, professionnel et motivant, j’ai contribué à former de futurs Médiamaticiens compétents, prêts à relever les défis du numérique.
+    </p>
+    
+      <a href="img/infographie.pdf" download class="btn-download-cv">
+          Infographie de la Junior Team en 2024
+        </a>
+  </div>
+  
+  <!-- Bloc contact à droite -->
+  <div class="about-me-contact">
+    <h3>Nom</h3>
+    <p>Ophélie Soler</p>
+    
+    <h3>Téléphone</h3>
+    <p>+41 79 353 83 82</p>
+    
+    <h3>Email</h3>
+    <p>opheliesoler26@gmail.com</p>
+    
+    <h3>Localisation</h3>
+    <p>Bellevue, Genève</p>
+  </div>
+
+</section>
+
+    <!-- SECTION RESUME -->
+      <section id="resume" class="section">
+        <h2 class="section-title">Mes outils favoris</h2>
+        <div class="tools-grid">
+          <!-- Outils / Skills -->
+          <div class="tool-card">
+            <img src="img/photoshop.png" alt="Photoshop" />
+          </div>
+          <div class="tool-card">
+            <img src="img/illustrator.png" alt="Illustrator" />
+          </div>
+             <div class="tool-card">
+            <img src="img/indesign.png" alt="Indesign" />
+            </div>
+             <div class="tool-card">
+            <img src="img/premiere-pro.png" alt="Premiere Pro" />
+          </div>
+             <div class="tool-card">
+            <img src="img/lightroom.png" alt="Lightroom" />
+          </div>
+            <div class="tool-card">
+            <img src="img/xd.png" alt="XD" />
+          </div>
+            <div class="tool-card">
+            <img src="img/microsoft.png" alt="microsoft" />
+          </div>
+          <!-- ... -->
+        </div>
+
+          
+        <h3 class="section-title">Les gens qui ont travaillés avec moi pensent</h3>
+        <section class="testimonials-section">
+
+  <div class="testimonial-cards">
+    <div class="testimonial-card">
+      <p class="testimonial-text">"Ophélie a fait un travail exceptionnel..."</p>
+      <div class="testimonial-author">
+        <img src="image1.jpg" alt="Photo de Lina Souaci">
+        <h4>Lina Souaci</h4>
+        <p>Responsable Junior Team (Digital Business)</p>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">"Ophélie a fait un travail exceptionnel..."</p>
+      <div class="testimonial-author">
+        <img src="image2.jpg" alt="Photo de Alexis Goncalves">
+        <h4>Alexis Goncalves</h4>
+        <p>Coach Sportif</p>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">"Ophélie a fait un travail exceptionnel..."</p>
+      <div class="testimonial-author">
+        <img src="image3.jpg" alt="Photo de Wilson">
+        <h4>Wilson</h4>
+        <p>Vendeur de boissons</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- SECTION CONTACT -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Parlez moi de votre projet ! </h2>
+        <form action="#" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Votre nom</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Entreprise</label>
+              <input type="text" id="company" name="company" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Numéro de téléphone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group textarea-col">
+              <label for="message">Commentaires</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+          </div>
+          <button class="btn-dark wide-rounded send-btn" type="submit">
+            Envoyer <span class="send-icon">✈</span>
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <!-- SCRIPT JS (IntersectionObserver pour navbar dynamique) -->
+  <script src="js/script.js"></script>
+</body>
+</html>
